@@ -1,15 +1,41 @@
 :root {
     --primary-color: #0056b3;
     --bg-color: #f4f4f9;
-    --card-bg: #fff;
+    --text-color: #333;
+    --card-bg: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: Roboto, sans-serif;
-    background: var(--bg-color);
-    color: #333;
-    padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     line-height: 1.6;
+    padding: 20px;
+}
+
+header, footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
 }
 
 main {
@@ -21,18 +47,92 @@ section {
     background: var(--card-bg);
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+}
 
-button {
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: white; border: none;
-    border-radius: 4px;
-    cursor: pointer; }
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
+
+.io-feld {
+    margin: 15px 0;
+}
 
 input {
     padding: 10px;
+    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003d82;
+}
+
+.error-msg {
+    color: red;
+    font-size: 0.9em;
+}
+
+.cv-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.cv-sidebar {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid var(--primary-color);
+}
+
+.cv-content {
+    margin-bottom: 0;
+}
+
+.cv-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.date {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.skills-list {
+    list-style-position: inside;
+}
+
+@media (min-width: 768px) {
+    .cv-grid {
+        grid-template-columns: 1fr 2fr;
+    }
 }

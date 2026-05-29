@@ -2,24 +2,46 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login & Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main>
-        <section>
-            <h2>Lebenslauf Login</h2>
+<header>
+    <h1>Willkommen auf meinem Portfolio</h1>
+</header>
+
+<main>
+    <section class="login-section">
+        <h2>Lebenslauf (CV) Login</h2>
+        <p>Bitte gib das Passwort ein, um zum CV zu gelangen.</p>
+        <div class="io-feld">
             <input type="password" id="passwordInput" placeholder="Passwort eingeben">
             <button onclick="checkLogin()">Login</button>
-        </section>
-        <section>
-            <h2>JS-Gadget: Kreis-Generator</h2>
+        </div>
+        <p id="loginError" class="error-msg"></p>
+    </section>
+
+    <section class="gadget-section">
+        <h2>JS-Gadget: Der Kreis-Generator</h2>
+        <p>Gib einen Radius ein und klicke auf Zeichnen!</p>
+
+        <div class="io-feld">
+            <label for="radiusInput">Radius (10-150):</label>
             <input type="number" id="radiusInput" value="50" min="10" max="150">
             <button onclick="drawCircle()">Zeichnen</button>
-            <p id="gadgetOutput"></p>
-            <canvas id="myCanvas" width="300" height="200" style="border:1px solid #ccc;"></canvas>
-        </section>
-    </main>
-    <script src="js/script.js"></script>
+        </div>
+
+        <p id="gadgetOutput"></p>
+
+        <canvas id="myCanvas" width="300" height="200" style="border:1px solid #ccc; background:#fff;"></canvas>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 - Julian Wenger</p>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>

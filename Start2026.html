@@ -2,27 +2,65 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
-    <title>Mein CV</title>
+    <title>Curriculum Vitae</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main>
-        <section>
-            <h1>Mein Lebenslauf</h1>
-            <h2>Kontakt</h2>
-            <p>Email: <a href="mailto:julian.wenger@quickline.ch">julian.wenger@quickline.ch</a></p>
-            <hr>
-            <h2>Ausbildung</h2>
-            <p>2017 - 2021: Applikationsentwickler EFZ (gibb, Noser Young Professionals)</p>
-            <p>2025 - 2028: dipl. Informatiker/-in HF (hftm)</p>
-            <h2>Skills</h2>
+<header>
+    <h1>Mein Lebenslauf</h1>
+    <p>Entwickler & QA Engineer</p>
+</header>
+
+<main class="cv-grid">
+    <aside class="cv-sidebar">
+        <img src="img/profilbild.jpg" alt="Mein Profilbild" class="profile-img">
+        <h2>Kontakt</h2>
+        <ul>
+            <li><a href="mailto:julian.wenger@quickline.ch">julian.wenger@quickline.ch</a></li>
+            <li>+41 79 123 45 67</li>
+            <li>Musterstrasse 1, 3000 Bern</li>
+        </ul>
+    </aside>
+
+    <section class="cv-content">
+        <h2>Über mich</h2>
+        <p>Ich bin ein motivierter Informatik-Student mit grosser Leidenschaft für Webtechnologien.</p>
+
+        <h2>Berufserfahrung</h2>
+        <article class="cv-item">
+            <h3>QA Engineer</h3>
+            <p class="date">August 2022 - Heute | Bucher + Suter AG</p>
             <ul>
-                <li>HTML5 & CSS3</li>
-                <li>JavaScript</li>
+                <li>Erarbeiten von Testsuiten</li>
+                <li>Sicherung der Produktqualität</li>
+                <li>Entwickeln von automatisierter Testsoftware mit Cypress und Playwright</li>
+                <li>CICD, Scrum, etc.</li>
             </ul>
-            <a href="index.html">← Zurück zum Login</a>
-        </section>
-    </main>
+        </article>
+
+        <h2>Ausbildung</h2>
+        <article class="cv-item">
+            <h3>Applikationsentwickler EFZ</h3>
+            <p class="date">2017 - 2021</p>
+        </article>
+        <article class="cv-item">
+            <h3>dipl. Informatiker/-in HF (hftm)</h3>
+            <p class="date">2025 - Voraussichtlich 2028</p>
+        </article>
+
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML5 / CSS3</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p><a href="index.html">Zurück zum Login</a></p>
+</footer>
 </body>
 </html>
