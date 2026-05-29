@@ -9,8 +9,15 @@
     <main>
         <section>
             <h2>Lebenslauf Login</h2>
-            <input type="password" id="passwordInput" placeholder="Passwort (Start2026)">
+            <input type="password" id="passwordInput" placeholder="Passwort eingeben">
             <button onclick="checkLogin()">Login</button>
+        </section>
+        <section>
+            <h2>JS-Gadget: Kreis-Generator</h2>
+            <input type="number" id="radiusInput" value="50" min="10" max="150">
+            <button onclick="drawCircle()">Zeichnen</button>
+            <p id="gadgetOutput"></p>
+            <canvas id="myCanvas" width="300" height="200" style="border:1px solid #ccc;"></canvas>
         </section>
     </main>
     <script src="js/script.js"></script>
