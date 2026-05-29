@@ -43,7 +43,7 @@ main {
     margin: 0 auto;
 }
 
-section {
+section, aside {
     background: var(--card-bg);
     padding: 20px;
     border-radius: 8px;
@@ -127,7 +127,7 @@ button:hover {
     margin-bottom: 5px;
 }
 
-.skills-list {
+.skills-list, .contact-list, .education-list, .job-details {
     list-style-position: inside;
 }
 
